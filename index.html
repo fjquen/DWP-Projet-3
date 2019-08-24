@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Locations de vélo</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome-free-5.0.9/web-fonts-with-css/css/fontawesome-all.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="icon" href="image/logo.png">
+</head>
+
+<body>
+    <header>
+        <div class="contenu">
+            <div class="logo">
+                <a href="#"><img src="image/logo.png" /></a>
+            </div>
+            <div class="boutton"> <a class="button-confirm pure-button" href="#form"> Réservez votre vélo</a> </div>
+        </div>
+    </header>
+    <div class="boxslideshow">
+
+        <div class="slideshow">
+            <button class="controls" id="previous"><i class="fas fa-arrow-left"></i></button>
+            <button class="controls" id="pause"><i class="fas fa-pause"></i></button>
+            <button class="controls" id="next"><i class="fas fa-arrow-right"></i></button>
+            <ul class="slides">
+                <li class="slide showing"><img class="slideImage" src="image/bicycle-art - Copie.jpg" /></li>
+                <li class="slide"><img class="slideImage" src="image/blue-bike-shaped-key-hook - Copie.jpg" /></li>
+                <li class="slide"><img class="slideImage" src="image/colin-czerwinski-577557 - Copie.jpg" /></li>
+                <li class="slide"><img class="slideImage" src="image/dakota-corbin-271467 - Copie.jpg" /></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <form id="form" method="post">
+        <fieldset>
+            <h1>Disponibilité de la station :</h1>
+            <div class="infovelo">
+                <div class='name'></div>
+                <div class='adresse'> </div>
+                <div class='place'></div>
+                <div class='dispo'></div>
+            </div>
+            <legend>Formulaire de réservation</legend>
+            <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> sont obligatoires</p>
+            <label for="nom">Nom <em>*</em></label>
+            <input id="nom" placeholder="Votre Nom" required="" type="text">
+            <label for="prenom">Prénom <em>*</em></label>
+            <input id="prenom" placeholder="Votre prénom" required="" type="text">
+            <div class="boxboutton">
+                <button class="button-confirm pure-button" type="button" id="validform">Valider</button>
+                <button class="button-error pure-button" type="button" id="videinput">Annuler</button>
+            </div>
+        </fieldset>
+        <div id="mapid"></div>
+
+
+    </form>
+    <div class="canvas">
+        <canvas id="sign" width="150" height="150"></canvas>
+        <div class="boxcanvasbouttons">
+            <button class="button-confirm pure-button" type="button" id="reserver">Réserver</button>
+            <button class="button-error pure-button" type="button" id="reset">Effacer</button>
+        </div>
+    </div>
+
+    <div class="boxbooking">
+        <h1 class="titleBooking">Réservation du vélo : </h1>
+        <div class='result'></div>
+        <div id="timer"></div>
+        <div class="boxbutton"><button class="button-error pure-button" type="button" id="vide_réservation">Annuler</button></div>
+    </div>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/station.js"></script>
+    <script src="js/sign.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
