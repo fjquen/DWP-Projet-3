@@ -1,0 +1,560 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+        
+        background-color:#ccffeb;
+
+}
+.boxslideshow{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.slideshow{
+    width:50%;
+}
+
+.slideshow,.controls{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px 16px;
+    margin: 5px;
+    border: 0px;
+}
+
+
+
+header div.contenu{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 2px solid green;
+    position:relative;
+    z-index: 10;
+    width: 100%;
+    background-color: honeydew;
+    
+}
+.button-confirm {
+            background: rgb(28, 184, 65); /* this is a green */
+            color: aliceblue;
+        }
+
+.button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+            color: aliceblue;
+        }
+#previous:hover,#next:hover,#pause:hover{
+    background-color:#4CAF50;
+    color: white;
+    border: 0.5px solid black;
+}
+
+#previous,#next,#pause{
+    border: 0.5px solid black;
+    background-color: #d9d9d9;
+}
+
+
+img{
+    width:100%;
+}
+
+.slideImage{
+    border: 3px solid green;
+}
+
+.boutton{
+    margin-top: 50px;
+    margin-right: 15px;
+}
+
+.logo{
+    margin-left: 15px;
+}
+.slides {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    width: 100%;
+    height: 700px
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    width: 100%;
+    opacity: 1;
+    z-index: 2;
+}
+.infovelo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95px;
+    margin-bottom: 10px;
+}
+
+#mapid { 
+position: relative;
+top:6px;
+height: 30.8vw;
+width: 40vw;
+border: 2px solid green;
+}
+form{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+fieldset {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid green;
+  width: 28%;
+  background: rgb(255, 255, 255,0.6);
+}
+fieldset h1{
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-family: sans-serif;    
+}
+fieldset p{
+    margin-bottom: 10px;
+}
+fieldset input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+ 
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+.boxboutton{
+    display: flex;
+    justify-content: space-between;
+    width: 38%;
+}
+.boxcanvasbouttons{
+    display: flex;
+    margin-top: 15px;
+    width: 33%;
+}
+.canvas{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 15px;
+    margin-bottom: 75px;
+    margin-left: 200px;
+}
+canvas { 
+border: 1px solid black;
+background: white;
+width: 22%;
+}
+
+#reset,#reserver{
+    width: 40%;
+}
+.boxcanvasbouttons,#reserver{
+margin-right: 8px
+}
+
+
+
+.boxbooking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    background: white;
+    padding-bottom: 15px;
+}
+
+.result{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#timer{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.titleBooking{
+    background: green;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;    
+    width: 99%;
+    padding: 5px;
+}
+
+
+.contact{
+    margin-top: 75px;
+}
+
+
+@media all and (max-width: 1440px) 
+{
+  .titleBooking{
+   
+    width: 99%;
+}
+  .slides {
+    height: 500px;
+    
+}
+    .canvas{
+    
+    margin-left: 155px;
+}
+    canvas{
+        width: 28%;
+    }
+    .boxcanvasbouttons{
+    width: 45%;
+}
+    .boxboutton{
+    
+    width: 55%;
+}
+    @media all and (max-width: 1280px) 
+{
+  .titleBooking{
+   
+    width: 99%;
+}
+
+  .slides {
+    height: 450px;
+    
+}
+    .canvas{
+    
+    margin-left: 135px;
+}
+    canvas{
+        width: 30%;
+    }
+    .boxcanvasbouttons{
+    width: 45%;
+}
+    .boxboutton{
+    
+    width: 55%;
+}
+}
+
+@media all and (max-width: 1024px) 
+{
+    .slides {
+    height: 360px;
+    
+}
+  fieldset {
+  
+  width: 42%;
+}
+  .canvas{
+    
+    margin-top: 10px;
+    margin-bottom: 75px;
+    margin-left: 55px;
+}
+canvas{
+    
+    width: 40%;
+    margin-top: 10px;
+}
+    #reset,#reserver{
+    width: 60%;
+}
+    .boxcanvasbouttons{
+    width: 35%;
+}
+    .boxboutton{
+   
+    width: 40%;
+}
+}
+
+@media all and (max-width: 980px)
+{
+  .slides {
+    height: 300px;
+    
+}
+    
+    fieldset {
+  
+  width: 40%;
+}
+    .boxboutton{
+    
+    width: 55%;
+}
+    
+.canvas{
+    
+    margin-top: 10px;
+    margin-bottom: 75px;
+    margin-left: 45px;
+}
+canvas{
+    
+    width: 45%;
+    margin-top: 10px;
+}
+    #reset,#reserver{
+    width: 60%;
+}
+    .boxcanvasbouttons{
+    width:45%;
+}
+}
+@media all and (max-width: 840px)
+{
+    .titleBooking{
+   
+    width: 98.5%;
+}
+    .slideshow{
+          width: 70%;
+      }
+    .slides {
+    height: 400px;
+    
+}
+    .canvas{
+    width: 45%;
+    margin-left: 20px;
+}
+  #mapid{
+          height: 51vw;
+          width: 50vw;
+      }   
+    
+    
+
+      
+  @media all and (max-width: 670px)
+  {
+      .titleBooking{
+   
+    width: 97%;
+}
+      .slideshow{
+          width: 60%;
+      }
+    .slides {
+    height: 250px;
+    
+}
+      #mapid{
+          height: 60vw;
+          width: 70vw;
+      }   
+      
+      
+      fieldset{
+          margin-top: 45px;
+          width: 55%;
+      }  
+      
+       
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+      .canvas{
+    
+    margin-top: 10px;
+    margin-bottom: 75px;
+    margin-left: 133px;
+}
+canvas{
+    
+    width: 51%;
+    margin-top: 10px;
+}
+    #reset,#reserver{
+    width: 80%;
+}
+}
+@media all and (max-width: 600px)
+{
+  .canvas{
+    
+    margin-left: 125px;
+}
+}
+@media all and ( max-width: 480px)
+{
+    .slideshow{
+          width: 80%;
+      }
+    .slides {
+    height: 275px;
+    
+}
+    
+    #mapid{
+          height: 85vw;
+          width: 90vw;
+      } 
+
+    fieldset{
+          width: 60%;
+      } 
+    .boxboutton{
+    
+    width: 75%;
+}
+    
+    .canvas{
+    
+    margin-left: 87px;
+}
+   canvas{
+    
+    width:75%;
+}
+    #reset,#reserver{
+    width: 90%;
+}
+    .boxcanvasbouttons{
+        width: 75%;
+    }
+    
+    @media all and (max-width: 420px){
+        
+        .canvas{
+    
+    margin-left: 72px;
+}
+        canvas{
+    
+    width:80%;
+}
+      
+    
+  @media all and (max-width: 380px)
+  {
+      .slides {
+    height: 200px;
+    
+}
+    fieldset{
+          width: 70%;
+      }
+     .canvas{
+    
+    margin-left: 45px;
+}
+      canvas{
+    
+    width:90%;
+}
+      
+  @media all and (max-width: 320px)
+  {
+      .slides {
+    height: 180px;
+    
+}
+    fieldset{
+          width: 80%;
+      }
+     .canvas{
+    
+    margin-left: 24px;
+         width: 45%;
+}
+      canvas{
+    
+    width:100%;
+}
+    
+      }}}}}}
