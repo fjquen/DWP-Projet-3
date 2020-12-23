@@ -3,10 +3,10 @@ var map = L.map('mapid', {
     center: [48.7900, 2.4667],
     zoom: 13
 })
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoieWFtaXNoaWJhaSIsImEiOiJjam94NjlnMzUxeXM1M3ZrZjd2cDYwM2trIn0.wrkZyHVLoLM9Vz98QcK_-A', {
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoieW9sb3NtbyIsImEiOiJja2oxYnRzangzMGFzMnJuNG8zZmhwbnV1In0.2DBXVAOzYTmrRXvw-X-Uig', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
-    id: 'mapbox.streets',
+    id: 'mapbox/streets-v11',
     accessToken: 'https://api.jcdecaux.com/vls/v1/stations?contract=creteil&apiKey=e1db7a9253ec6a063e6426952b1e1da38b07ff0f'
 
 
